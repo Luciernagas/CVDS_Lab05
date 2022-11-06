@@ -2,6 +2,21 @@
 ##  ♡ Luisa Valentina De la hoz Rocha ♡
 
 ### PARTE I. - JUGANDO A SER UN CLIENTE HTTP
+***1. Abra una terminal Linux o consola de comandos Windows.***
+***2. Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:***
+![image](https://user-images.githubusercontent.com/104604359/200189302-faaf9c6f-0ad9-48b8-8513-15f9cccc9a49.png)
+
+***3. Antes de que el servidor cierre la conexión por falta de comunicación:***
+***-> Revise la página 36 del RFC del protocolo HTTP, sobre cómo realizar una petición GET. Con esto, solicite al servidor el recurso ‘sssss/abc.html’,usando la versión 1.0 de HTTP.***
+***-> Asegúrese de presionar ENTER dos veces después de ingresar el comando.***
+![image](https://user-images.githubusercontent.com/104604359/200189419-beaf36cd-46ce-4551-8dc4-e02931c48c88.png)
+
+***-> Revise el resultado obtenido. ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.***
+Error 301: Se refiere a un error de tipo REDIRECCIONAMIENTO utilizando la version HTTP 1.0 Resultado
+
+***-> ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?***
+![image](https://user-images.githubusercontent.com/104604359/200189779-4a92a06e-0c7b-4fcf-887f-637a5cc8a19e.png)
+
 - - -
 ### PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA A BAJONIVEL
 ***1. Revise la clase SampleServlet incluida a continuacion, e identifi que qué hace:***
