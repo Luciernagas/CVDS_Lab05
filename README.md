@@ -17,6 +17,50 @@ Error 301: Se refiere a un error de tipo REDIRECCIONAMIENTO utilizando la versio
 ***-> ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?***
 ![image](https://user-images.githubusercontent.com/104604359/200189779-4a92a06e-0c7b-4fcf-887f-637a5cc8a19e.png)
 
+***4. Realice una nueva conexión con telnet, esta vez a:***
+![image](https://user-images.githubusercontent.com/104604359/200190024-12a8ddbc-3bfe-45bf-a7bb-77666af4d9f2.png)
+
+***¡Muy bien!, ¡Acaba de usar del protocolo HTTP sin un navegador Web!. Cada vez que se usa un navegador, éste se conecta a un servidor HTTP, envía peticiones(del protocolo HTTP), espera el resultado de las mismas, y -si se trata de contenido HTML- lo interpreta y dibuja.***
+
+***5. Seleccione el contenido HTML de la respuesta y copielo al cortapapeles CTRL-SHIFT-C. Ejecute el comando wc (word count) para contar palabras con la opción -c para contar el número de caracteres:***
+
+***Pegue el contenido del portapapeles con CTRL-SHIFT-V y presione CTRL-D (fin de archivo de Linux). Si no termina el comando wc presione CTRL-D denuevo. No presione mas de dos veces CTRL-D indica que se termino la entrada y puede cerrarle la terminal. Debe salir el resultado de la cantidad decaracteres que tiene el contenido HTML que respondió el servidor.***
+
+***Claro está, las peticiones GET son insufi cientes en muchos casos. Investigue: ¿Cuál es la diferencia entre los verbos GET y POST? ¿Qué otros tipos depeticiones existen?***
+
+**-> Get:** se encarga de llevar los datos de forma que cualquiera pueda verlos al cliente por medio de la URL.
+
+**-> Post:** trata con datos que el cliente no puede ver los cuales son enviados por un formulario.
+
+**-> Head:** solicita una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.
+
+**-> Delete:** elimina un recurso en específico.
+
+**-> Options:** se utiliza para describir las opciones de comunicación del recurso de destino.
+
+**-> Patch:** es utilizado para aplicar modificaciones parciales a un recurso.
+
+***6. En la practica no se utiliza telnet para hacer peticiones a sitios web sino el comando curl con ayuda de la linea de comandos:***
+![image](https://user-images.githubusercontent.com/104604359/200190504-1fe5ad19-cc93-4672-8919-c27ce4b671c5.png)
+![image](https://user-images.githubusercontent.com/104604359/200190521-61de6310-33b0-43d3-bcd5-ac7c7b6ff44e.png)
+![image](https://user-images.githubusercontent.com/104604359/200190535-cc440452-e79d-4956-9f53-be6a45e1b843.png)
+![image](https://user-images.githubusercontent.com/104604359/200190544-a6b3dd10-1089-4764-90d5-2146ce47293c.png)
+![image](https://user-images.githubusercontent.com/104604359/200190555-16790a27-c24e-4f12-8454-055fca8a1346.png)
+
+***Utilice ahora el parámetro -v y con el parámetro-i:***
+![image](https://user-images.githubusercontent.com/104604359/200190615-0a4f2e4e-1c0e-4ae2-af57-5bafb504bcc3.png)
+![image](https://user-images.githubusercontent.com/104604359/200190628-27dc612f-9474-47a7-a631-c7015082ffbd.png)
+![image](https://user-images.githubusercontent.com/104604359/200190644-c8671558-5b15-408a-98bd-6fddf7876c3a.png)
+![image](https://user-images.githubusercontent.com/104604359/200190666-c3d4fa62-713f-4ac1-88a5-d4a3a8901b2e.png)
+![image](https://user-images.githubusercontent.com/104604359/200190682-e70c8ccb-7aa8-48ee-b108-7e17a671d99a.png)
+![image](https://user-images.githubusercontent.com/104604359/200190706-b0979e6a-dc0d-430c-b332-4dbb2d4c1b04.png)
+![image](https://user-images.githubusercontent.com/104604359/200190722-eaab0249-530f-438a-9bda-7ac98021c4aa.png)
+
+
+***¿Cuáles son las diferencias con los diferentes parámetros?***
+El parametro -i sirve para incluir el encabezado del protocolo en el outout
+El parametro -v sirve para que curl se vuelva sea mas descriptivo
+
 - - -
 ### PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA A BAJONIVEL
 ***1. Revise la clase SampleServlet incluida a continuacion, e identifi que qué hace:***
