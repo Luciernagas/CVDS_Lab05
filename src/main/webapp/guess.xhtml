@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Adivina el numero</title>
+</h:head>
+<h:body>
+    <h:form id="guess_form">
+        <p:outputLabel style="display: none;" value="#{guessBean.numeroAleatorio}"/>
+        <br/>
+        <p:outputLabel value="INTENTOS: #{guessBean.intentos}"/>
+        <br/>
+        <p:outputLabel value= "Estado del juego : #{guessBean.estadoJuego}"/>
+        <br/>
+        <p:outputLabel value="Premio #{guessBean.premio}"/>
+        <br/>
+        <p:inputText id="currentAttempt"  placeholder="Digite un numero" value="#{guessBean.n_intento}"/>
+        <p:commandButton update="guess_form" actionListener="#{guessBean.juego}" value="Guess"/>
+        <p:commandButton update="guess_form" actionListener="#{guessBean.reinciar}" value="Restart"
+                         styleClass="ui-priority-primary"/>
+    </h:form>
+</h:body>
+</html>
